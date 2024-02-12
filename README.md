@@ -20,7 +20,7 @@ Before running the script, make sure you have the following:
 2. **Get Guild ID, Channel ID, and Message ID:**
    - In your Discord client, right-click on the server (guild) name and click "Copy Server ID" to get the Guild ID.
    - Right-click on the desired channel and click "Copy Channel ID" to get the Channel ID.
-   - Find the message you want to track, right-click on it, and click "Copy Message ID." Get the Message ID from the link (Only the numbers are needed`).
+   - Find the message you want to track, right-click on it, and click "Copy Message ID." Get the Message ID (Only the number is needed`).
 
 3. **Configure the Script:**
    - Open `bot.py` in a text editor.
