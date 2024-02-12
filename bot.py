@@ -23,7 +23,7 @@ async def on_ready():
                     if user not in reacted_users:
                         reacted_users.add(user)
                         try:
-                            await user.send(f"გამარჯობა! {user.mention}, პიქსმაპზე გვიტევენ! შენი დახმარება გვჭირდება https://discord.com/channels/1146053073312174080/1187887533716144198")
+                            await user.send(f"message1 {user.mention}, message2")
                         except discord.Forbidden:
                             print(f"Cannot send a message to user {user.name}#{user.discriminator}")
                             continue
@@ -39,8 +39,8 @@ async def on_raw_reaction_add(payload):
         if user not in reacted_users:
             reacted_users.add(user)
             try:
-                await user.send(f"გამარჯობა {user.mention}, სომხებს ვუტევთ! https://discord.com/channels/1146053073312174080/1187887533716144198 მოდი !")
+                await user.send(f"this too {user.mention}, ignore this")
             except discord.Forbidden:
                 print(f"Cannot send a message to user {user.name}#{user.discriminator}")
 
-client.run('MTE5MDE5NTUyMTU3NTQ1Mjc5Mw.GPeAof.JVOAuHx7-uk1vFqwo-muKzMoRgt6jGHTmEQzEQ')
+client.run('replacewithbottoken')
